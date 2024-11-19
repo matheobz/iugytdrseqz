@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
+    baseURL: '/', // Assurez-vous que le chemin est correct
     head: {
       link: [
         {
@@ -15,9 +16,9 @@ export default defineNuxtConfig({
     },
   },
 
-  pages: true,
-  css: ["~/assets/css/reset.css"],
-  ssr: false,
+  pages: true, // Active le système de pages
+  css: ["~/assets/css/reset.css"], // Ajout du fichier CSS global
+  ssr: false, // Désactive le Server-Side Rendering
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
-})
+});
